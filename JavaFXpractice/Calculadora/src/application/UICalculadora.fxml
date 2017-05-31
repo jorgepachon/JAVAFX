@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="253.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <Pane prefHeight="348.0" prefWidth="261.0" styleClass="background" stylesheets="@application.css">
+         <children>
+            <Button fx:id="btnSuma" layoutX="14.0" layoutY="247.0" mnemonicParsing="false" onAction="#suma" prefHeight="46.0" prefWidth="75.0" text="+">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Button>
+            <Button fx:id="btnResta" layoutX="164.0" layoutY="293.0" mnemonicParsing="false" onAction="#resta" prefHeight="46.0" prefWidth="75.0" text="-">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+            <Button fx:id="btnMult" layoutX="14.0" layoutY="293.0" mnemonicParsing="false" onAction="#multiplicacion" prefHeight="46.0" prefWidth="75.0" text="x">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+            <TextField fx:id="TextFieldNum1" layoutX="26.0" layoutY="166.0" prefHeight="37.0" prefWidth="53.0" />
+            <TextField fx:id="TextFieldNum2" layoutX="186.0" layoutY="166.0" prefHeight="37.0" prefWidth="53.0" />
+            <TextField fx:id="TextFieldResultado" editable="false" layoutX="7.0" layoutY="14.0" prefHeight="37.0" prefWidth="246.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label fx:id="lblSum" layoutX="32.0" layoutY="138.0" text="Num1" />
+            <Label fx:id="lblResta" layoutX="193.0" layoutY="138.0" text="Num2" />
+            <Button fx:id="btnDivision" layoutX="89.0" layoutY="293.0" mnemonicParsing="false" onAction="#division" prefHeight="46.0" prefWidth="75.0" text="/">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+            <Button fx:id="btnclear" layoutX="90.0" layoutY="247.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="46.0" prefWidth="149.0" text="C">
+               <font>
+                  <Font size="21.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
